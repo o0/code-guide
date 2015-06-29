@@ -1,0 +1,14 @@
+@import "normalize.css"; /* import from node_modules */
+@import "variables.css";
+
+body {
+  background-color: var(--bgcolor);
+  color: var(--color);
+}
+
+main {
+  & :any-link {
+    color: var(--color);
+    text-decoration: underline;
+  }
+}

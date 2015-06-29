@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "start": "gulp start -- --harmony",
+    "prepush": "eslint ."
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "tapjs": "^1.0.7"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.7",
+    "babel-eslint": "^3.1.18",
+    "babel-loader": "^5.2.0",
+    "babel-runtime": "^5.6.7",
+    "browser-sync": "^2.7.12",
+    "css-mqpacker": "^3.1.0",
+    "cssnext": "^1.7.1",
+    "eslint": "^0.23.0",
+    "fs-extra": "^0.20.1",
+    "gulp": "^3.9.0",
+    "gulp-compile-handlebars": "^0.5.0",
+    "gulp-postcss": "^5.1.9",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.6",
+    "gulp-webpack": "^1.5.0",
+    "hbs-helpers": "^1.0.1",
+    "husky": "^0.8.1",
+    "merge": "^1.2.0",
+    "ngrok": "^0.1.99",
+    "node-libs-browser": "^0.5.2",
+    "postcss-assets": "^2.1.2",
+    "postcss-mixins": "^0.3.0",
+    "postcss-nested": "^0.3.2",
+    "psi": "^1.0.6",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.1",
+    "webpack": "^1.9.12"
+  },
+  "license": "MIT"
+}
