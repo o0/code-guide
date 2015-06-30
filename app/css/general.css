@@ -1,9 +1,22 @@
-html {
-  font-size: 16px;
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(/fonts/PT_Sans-Web-Regular.ttf) format('truetype');
 }
-@media (min-width: 48em) {
+/* @font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(/fonts/PT_Sans-Web-Bold.ttf) format('truetype');
+} */
+
+html {
+  font-size: var(--base-px-size);
+}
+@media (--viewport-large) {
   html {
-    font-size: 20px;
+    font-size: var(--large-px-size);
   }
 }
 body {
@@ -15,9 +28,6 @@ body {
 main {
   a:any-link {
     color: var(--dark-color);
-    text-decoration: underline;
-  }
-  a:hover {
     text-decoration: underline;
   }
 }

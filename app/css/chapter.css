@@ -2,7 +2,7 @@
   padding: 2rem 1rem 1.5rem;
   background-color: var(--subtle-color);
 }
-@media (min-width: 38em) {
+@media (--viewport-medium) {
   .chapter h2 {
     padding: 3rem 3rem 2.5rem;
   }
@@ -25,12 +25,12 @@
 .chapter-part-col p {
   max-width: 40rem;
 }
-@media (min-width: 38em) {
+@media (--viewport-medium) {
   .chapter-part-col {
     padding: 2rem;
   }
 }
-@media (min-width: 48em) {
+@media (--viewport-large) {
   .chapter-part {
     flex-direction: row;
   }

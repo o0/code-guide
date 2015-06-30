@@ -1,7 +1,15 @@
 :root {
+  /* colors */
   --light-color: #ffffff;
   --dark-color: #5a5a5a;
   --brand-color: #2e3191;
   --subtle-color: #f5f5f5;
   --lighter-subtle-color: color(var(--subtle-color) lightness(+3%));
+
+  /* typography */
+  --base-px-size: 16px;
+  --large-px-size: calc(var(--base-px-size) * 1.25);
 }
+
+@custom-media --viewport-large (min-width: 48em);
+@custom-media --viewport-medium (min-width: 38em);
