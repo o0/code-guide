@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "normalize.css": "^3.0.3",
-    "tapjs": "^1.0.7"
+    "prismjs": "0.0.1",
+    "prismjs-default-theme": "0.0.1"
   },
   "devDependencies": {
     "babel-core": "^5.6.7",

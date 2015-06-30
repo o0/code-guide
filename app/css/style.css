@@ -1,5 +1,6 @@
-@import "normalize.css"; /* import from node_modules */
+@import "normalize.css";
 @import "variables.css";
+@import "prismjs-default-theme/prism-default.css";
 
 body {
   background-color: var(--bgcolor);
