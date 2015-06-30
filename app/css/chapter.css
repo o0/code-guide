@@ -1,6 +1,6 @@
 .chapter h2 {
   padding: 2rem 1rem 1.5rem;
-  background-color: var(--subtle-bgcolor);
+  background-color: var(--subtle-color);
 }
 @media (min-width: 38em) {
   .chapter h2 {
@@ -10,13 +10,13 @@
 .chapter-part {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid var(--subtle-bgcolor);
+  border-bottom: 1px solid var(--subtle-color);
 }
 .chapter-part-col {
   padding: 2rem 1rem;
   & + .chapter-part-col {
-    border-top: 1px solid var(--subtle-bgcolor);
-    background-color: var(--lighter-subtle-bgcolor);
+    border-top: 1px solid var(--subtle-color);
+    background-color: var(--lighter-subtle-color);
   }
 }
 .chapter-part-col figure {
