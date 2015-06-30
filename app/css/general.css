@@ -1,76 +1,79 @@
 @font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: "PT Sans";
   font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(/fonts/PT_Sans-Web-Regular.ttf) format('truetype');
-}
-/* @font-face {
-  font-family: 'PT Sans';
   font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(/fonts/PT_Sans-Web-Bold.ttf) format('truetype');
-} */
+
+  src: local("PT Sans"), local("PTSans-Regular"), url(/fonts/PT_Sans-Web-Regular.ttf) format("truetype");
+}
 
 html {
   font-size: var(--base-px-size);
 }
+
 @media (--viewport-large) {
   html {
     font-size: var(--large-px-size);
   }
 }
+
 body {
   margin: 0;
   background-color: var(--light-color);
   color: var(--dark-color);
   font: 1rem/1.5 "PT Sans", sans-serif;
 }
+
 main {
   a:any-link {
     color: var(--dark-color);
     text-decoration: underline;
   }
 }
+
 h1,
 h2,
-h3,
-h4 {
+h3 {
   margin: 0;
-  color: #2a2a2a;
+  color: var(--darker-color);
   letter-spacing: -0.025em;
   font-weight: normal;
-  line-height: 1;
 }
+
 h2,
 h3 {
   line-height: 1.2;
 }
+
 h1 {
   font-size: 3rem;
   line-height: 1.3;
 }
+
 h2 {
   font-size: 2.5rem;
 }
+
 h3 {
   font-size: 1.75rem;
 }
-/* h4 {
-  font-size: 1.25rem;
-} */
+
 code {
   font-size: 85%;
 }
+
 pre {
-  font-size: 95%;
   margin: 0 0 1rem;
+  font-size: 95%;
   line-height: 1.4;
 }
+
+/* override default Prism theme*/
 pre[class*="language-"] {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: initial;
+  background: initial;
 }
