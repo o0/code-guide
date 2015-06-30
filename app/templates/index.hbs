@@ -20,25 +20,21 @@
         <h2>HTML</h2>
         <article class="chapter-part">
           <div class="chapter-part-col">
-            <h3>Заголовок статьи</h3>
-            <p>Текст статьи</p>
+            {{> html/html-syntax}}
           </div>
           <div class="chapter-part-col">
             <figure>
-              <pre><code class="language-markup">{{> html-code}}</code></pre>
-              <figcaption>Подпись под кодом</figcaption>
+              <pre><code class="language-markup">{{> html/examples/html-syntax-example}}</code></pre>
             </figure>
           </div>
         </article>
         <article class="chapter-part">
           <div class="chapter-part-col">
-            <h3>Заголовок статьи 2</h3>
-            <p>Текст статьи 2</p>
+            {{> html/html-doctype}}
           </div>
           <div class="chapter-part-col">
             <figure>
-              <pre><code class="language-markup">{{> html-code}}</code></pre>
-              <figcaption>Подпись под кодом 2</figcaption>
+              <pre><code class="language-markup">{{> html/examples/html-doctype-example}}</code></pre>
             </figure>
           </div>
         </article>
@@ -73,7 +69,6 @@
       </section>
 
       <footer>
-
       </footer>
     </main>
 
