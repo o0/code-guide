@@ -1,0 +1,44 @@
+.chapter h2 {
+  padding: 2rem 1rem 1.5rem;
+  background-color: var(--subtle-bgcolor);
+}
+@media (min-width: 38em) {
+  .chapter h2 {
+    padding: 3rem 3rem 2.5rem;
+  }
+}
+.chapter-part {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--subtle-bgcolor);
+}
+.chapter-part-col {
+  padding: 2rem 1rem;
+  & + .chapter-part-col {
+    border-top: 1px solid var(--subtle-bgcolor);
+    background-color: var(--lighter-subtle-bgcolor);
+  }
+}
+.chapter-part-col figure {
+  margin: 0 1rem;
+}
+.chapter-part-col p {
+  max-width: 40rem;
+}
+@media (min-width: 38em) {
+  .chapter-part-col {
+    padding: 2rem;
+  }
+}
+@media (min-width: 48em) {
+  .chapter-part {
+    flex-direction: row;
+  }
+  .chapter-part-col {
+    width: 50%;
+    padding: 3rem;
+  }
+  .chapter-part-col + .chapter-part-col {
+    border-top: 0;
+  }
+}

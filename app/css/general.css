@@ -1,0 +1,61 @@
+html {
+  font-size: 16px;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 20px;
+  }
+}
+body {
+  margin: 0;
+  background-color: var(--main-bgcolor);
+  color: var(--main-color);
+  font: 1rem/1.5 "PT Sans", sans-serif;
+}
+main {
+  a:any-link {
+    color: var(--main-color);
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: #2a2a2a;
+  letter-spacing: -0.025em;
+  font-weight: normal;
+  line-height: 1;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+/* h4 {
+  font-size: 1.25rem;
+} */
+code {
+  font-size: 85%;
+}
+pre {
+  font-size: 95%;
+  margin: 0 0 1rem;
+  line-height: 1.4;
+}
+pre[class*="language-"] {
+  padding: 0;
+  margin: 0;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: initial;
+}

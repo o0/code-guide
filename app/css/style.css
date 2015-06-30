@@ -1,15 +1,6 @@
 @import "normalize.css";
 @import "variables.css";
 @import "prismjs-default-theme/prism-default.css";
-
-body {
-  background-color: var(--bgcolor);
-  color: var(--color);
-}
-
-main {
-  & :any-link {
-    color: var(--color);
-    text-decoration: underline;
-  }
-}
+@import "general.css";
+@import "masthead.css";
+@import "chapter.css";

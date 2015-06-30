@@ -1,4 +1,6 @@
 :root {
-  --bgcolor: #ffffff;
-  --color: #5a5a5a;
+  --main-bgcolor: #ffffff;
+  --main-color: #5a5a5a;
+  --subtle-bgcolor: #dfe1e8;
+  --lighter-subtle-bgcolor: color(var(--subtle-bgcolor) lightness(+7%));
 }
