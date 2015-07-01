@@ -23,7 +23,7 @@
   margin: 0 1rem;
 }
 .chapter-part-col p {
-  max-width: 40rem;
+  max-width: 32rem;
 }
 @media (--viewport-medium) {
   .chapter-part-col {

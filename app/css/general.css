@@ -28,6 +28,9 @@ main {
     color: var(--dark-color);
     text-decoration: underline;
   }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 h1,
