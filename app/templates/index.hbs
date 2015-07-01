@@ -15,7 +15,6 @@
         </a>
         <h1>Стиль кода HTML&nbsp;Academy</h1>
       </header>
-
       <section class="chapter">
         <h2>HTML</h2>
         <article class="chapter-part">
@@ -68,6 +67,26 @@
             </figure>
           </div>
         </article>
+        <article class="chapter-part">
+          <div class="chapter-part-col">
+            {{> html/html-boolean}}
+          </div>
+          <div class="chapter-part-col">
+            <figure>
+              <pre><code class="language-markup">{{> html/examples/html-boolean-example}}</code></pre>
+            </figure>
+          </div>
+        </article>
+        <article class="chapter-part">
+          <div class="chapter-part-col">
+            {{> html/html-language}}
+          </div>
+          <div class="chapter-part-col">
+            <figure>
+              <pre><code class="language-markup">{{> html/examples/html-language-example}}</code></pre>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <section class="chapter">
@@ -97,13 +116,10 @@
           </div>
         </article>
       </section>
-
       <footer>
       </footer>
     </main>
-
     <script src="{{resolve 'app.js'}}"></script>
-
   </body>
 
 </html>
