@@ -1,0 +1,22 @@
+&lt;!-- Неверно: скрипт подключается в секции &lt;head&gt;. --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="js/script.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!-- Верно: скрипт подключается перед закрывающим тегом &lt;body&gt;. --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Содержимое страницы --&gt;
+    &lt;script src="js/script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
