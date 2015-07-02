@@ -1,6 +1,4 @@
 # Starter Kit
-[![Dependency status][dependency-image]][dependency-url]
-[![devDependency status][devdependency-image]][devdependency-url]
 
 Kit is supported in all versions of [iojs](https://iojs.org/en/index.html) without any flags.
 
