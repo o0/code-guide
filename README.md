@@ -24,6 +24,9 @@ $ npm start
 * Open http://127.0.0.1:3000
 
 # Code-guide
+## Last build live
+http://juwain.github.io/code-guide/
+
 ## References
 
 1. Mark Otto https://github.com/mdo/code-guide http://codeguide.co
