@@ -1,0 +1,10 @@
+/* Неверно */
+.catalog .catalog-item .item-description .desciption-title {}
+div > p > a > span {}
+
+/* Верно */
+.catalog {}
+.catalog-item img {}
+.catalog-item .item-description {}
+.catalog-item h3 {}
+.catalog-item:nth-child(odd):hover .item-description::after {} /* это тоже 2 уровня вложенности */
