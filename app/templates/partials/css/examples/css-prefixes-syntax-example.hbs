@@ -1,4 +1,10 @@
-/* Свойства с префиксами */
+/* Неверно */
+.selector {
+  transition: 1s color;
+  -webkit-transition: 1s color;
+}
+
+/* Верно */
 .selector {
   -webkit-transition: 1s color;
           transition: 1s color;
