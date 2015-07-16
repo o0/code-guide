@@ -1,0 +1,24 @@
+/* Неверно: Указан только основной шрифт. */
+body {
+  font-family: 'PT Sans Narrow';
+}
+
+/* Неверно: Указан только основной шрифт и тип семейства, альтернативный веб-безопасный шрифт отсутствует. */
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* Неверно: Times New Roman — шрифт с засечками, а основной шрифт — без засечек. */
+body {
+  font-family: 'PT Sans Narrow', 'Times New Roman', sans-serif;
+}
+
+/* Верно: Указан альтернативный веб-безопасный шрифт и его тип семейства. */
+body {
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+}
+
+/* Кому-то нравится Arial, кому-то Tahoma */
+body {
+  font-family: 'PT Sans Narrow', 'Tahoma', sans-serif;
+}
