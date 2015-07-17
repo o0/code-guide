@@ -559,7 +559,7 @@ pre[class*="language-"] {
   font-weight: 400;
   font-style: normal;
 
-  src: local("PT Sans"), local("PTSans-Regular"), url(/fonts/PT_Sans-Web-Regular.ttf) format("truetype");
+  src: local("PT Sans"), local("PTSans-Regular"), url(fonts/PT_Sans-Web-Regular.ttf) format("truetype");
 }
 
 html {
