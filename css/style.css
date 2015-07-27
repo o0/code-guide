@@ -657,6 +657,11 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   background: initial;
 }
+
+ul li {
+  margin-bottom: 4px;
+  margin-bottom: .25rem;
+}
 .masthead {
   padding: 48px 16px 96px;
   padding: 3rem 1rem 6rem;
