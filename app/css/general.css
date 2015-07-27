@@ -103,3 +103,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   background: initial;
 }
+
+ul li {
+  margin-bottom: .25rem;
+}
