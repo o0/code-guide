@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs-extra');
 
 const root = path.resolve('build/');
-const discover = ['img', 'fonts', 'css', 'js'].map(function(folder) {
+const discover = ['img', 'fonts', 'files', 'css', 'js'].map(function(folder) {
   return path.resolve(root, folder);
 });
 
