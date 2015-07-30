@@ -1,0 +1,54 @@
+.footer {
+  padding: 2rem;
+  background-color: var(--brand-color-dark);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-full {
+  display: inline-block;
+  width: 161px;
+  margin-bottom: 3px;
+}
+
+.soc-icons {
+  font-size: 0;
+  display: flex;
+  width: 168px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  min-width: 2rem;
+  min-height: 2rem;
+  opacity: .5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(100% - 5px);
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.icon-vk {
+  background-image: resolve('icon-vkontakte.svg');
+}
+
+.icon-fb {
+  background-image: resolve('icon-facebook.svg');
+}
+
+.icon-tw {
+  background-image: resolve('icon-twitter.svg');
+}
+
+.icon-ig {
+  background-image: resolve('icon-instagram.svg');
+}

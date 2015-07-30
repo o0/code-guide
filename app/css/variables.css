@@ -4,6 +4,7 @@
   --dark-color: #5a5a5a;
   --darker-color: color(var(--dark-color) blackness(+50%));
   --brand-color: #2e3191;
+  --brand-color-dark: #2d2d44;
   --subtle-color: #e5e5e5;
   --lighter-subtle-color: color(var(--subtle-color) lightness(+5%));
   --light-subtle-color: color(var(--subtle-color) lightness(+8%));

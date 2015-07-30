@@ -3,10 +3,17 @@
   background-color: var(--brand-color);
   text-align: center;
 }
+
 .masthead h1 {
   margin: 1rem 0 0.25rem;
   color: var(--light-color);
 }
+
+.logo {
+  width: 100px;
+  height: 127px;
+}
+
 @media (--viewport-medium) {
   .masthead {
     padding-top: 4rem;

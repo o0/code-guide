@@ -3,7 +3,9 @@
   font-weight: 400;
   font-style: normal;
 
-  src: local("PT Sans"), local("PTSans-Regular"), url(/fonts/PT_Sans-Web-Regular.ttf) format("truetype");
+  src:local("PT Sans"),
+      local("PTSans-Regular"),
+      resolve("PT_Sans-Web-Regular.ttf") format("truetype");
 }
 
 html {
@@ -94,6 +96,10 @@ pre code {
   border: 0;
 }
 
+ul li {
+  margin-bottom: 0.25rem;
+}
+
 /* override default Prism theme*/
 code[class*="language-"], pre[class*="language-"] {
   white-space: pre-wrap;
@@ -107,8 +113,4 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
   background: initial;
-}
-
-ul li {
-  margin-bottom: .25rem;
 }
