@@ -9,6 +9,6 @@
     ]
   },
 
-  "discover": ["img", "css", "js"],
+  "discover": ["img", "fonts", "css", "js", "files"],
   "browsers": "last 2 versions, ie 10"
 }

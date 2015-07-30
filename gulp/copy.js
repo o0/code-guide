@@ -25,3 +25,8 @@ gulp.task('copy:image', function() {
   return gulp.src('app/img/**/*.{jpg,png,webp,svg,gif,ico}')
     .pipe(gulp.dest('build/img'));
 });
+
+gulp.task('copy:fonts', function() {
+  return gulp.src('app/fonts/**/*')
+    .pipe(gulp.dest('build/fonts'));
+});

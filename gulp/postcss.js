@@ -16,6 +16,7 @@ const cssnext = require('cssnext');
 const nested = require('postcss-nested');
 const assets = require('postcss-assets');
 const mqpacker = require('css-mqpacker');
+const cssnano = require('cssnano');
 
 let files = options.entry.css.map(function(file) {
   return path.join('app', 'css', file);
@@ -26,11 +27,7 @@ let plugins = [
   mixins(),
   cssnext({
     browsers: options.browsers,
-    compress: {
-      comments: {
-        removeAll: true
-      }
-    }
+    import: false
   }),
   nested(),
   assets({
@@ -39,6 +36,11 @@ let plugins = [
   }),
   mqpacker({
     sort: true
+  }),
+  cssnano({
+    comments: {
+      removeAll: true
+    }
   })
 ];
 
