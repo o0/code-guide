@@ -11,29 +11,30 @@
     <main>
       <header class="masthead">
         <a href="https://github.com/htmlacademy/kit">
-          <img src="img/logo.svg" width="100" alt="">
+          <img class="logo" src="img/logo.svg" width="100" height="127" alt="HTML Academy">
         </a>
         <h1>Стиль кода HTML&nbsp;Academy</h1>
       </header>
       <section class="chapter">
         <h2>HTML</h2>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Синтаксис</h3>
-            <ul>
-              <li>Для отступов у вложенных элементов используйте два пробела. Ширина табов может быть различной в разных редакторах и системах, в то время как пробел везде одной ширины. Для правильного форматирования используйте файл <a href="/files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
-              <li>Теги и их атрибуты пишите строчными буквами. Для значений атрибутов всегда используйте двойные кавычки.</li>
-              <li>Не используйте необязательный закрывающий слеш у одиночных тегов (
-                <code>&lt;img&gt;</code>,
-                <code>&lt;br&gt;</code> и другие).</li>
-              <li>Не пропускайте необязательные закрывающие теги (например,
-                <code>&lt;/li&gt;</code> или
-                <code>&lt;/body&gt;</code>).</li>
-            </ul>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+        <h3>Правила</h3>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Синтаксис</h4>
+    <ul>
+      <li>Для отступов у вложенных элементов используйте два пробела. Для правильного форматирования используйте файл <a href="/files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
+      <li>Теги и их атрибуты пишите строчными буквами. Для значений атрибутов всегда используйте двойные кавычки.</li>
+      <li>Не используйте необязательный закрывающий слеш у одиночных тегов (
+        <code>&lt;img&gt;</code>,
+        <code>&lt;br&gt;</code> и другие).</li>
+      <li>Не пропускайте необязательные закрывающие теги (например,
+        <code>&lt;/li&gt;</code> или
+        <code>&lt;/body&gt;</code>).</li>
+    </ul>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Название страницы&lt;/title&gt;
@@ -50,26 +51,26 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Валидность HTML</h3>
-            <p>
-              Документ должен проходить проверку на валидность. Для проверки используйте <a target="_blank" href="http://validator.w3.org/nu/">современный валидатор</a>.
-            </p>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>HTML5 doctype</h3>
-            <p>В начале страницы обязательно нужно указывать актуальный
-              <code>doctype</code>, чтобы браузер отображал её в режиме соответсвия стандартам. Это гарантирует, что страница будет выглядеть единообразно во всех современных браузерах.</p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Валидность HTML</h4>
+    <p>
+      Документ должен проходить проверку на валидность. Для проверки используйте <a target="_blank" href="http://validator.w3.org/nu/">современный валидатор</a>.
+    </p>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>HTML5 doctype</h4>
+    <p>В начале страницы обязательно нужно указывать актуальный
+      <code>doctype</code>, чтобы браузер отображал её в режиме соответсвия стандартам. Это гарантирует, что страница будет выглядеть единообразно во всех современных браузерах.</p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
   &lt;/head&gt;
@@ -77,22 +78,254 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Семантическая разметка</h3>
-            <p>
-              Используйте в разметке семантические теги HTML.
-            </p>
-            <p>
-              Параграфы текста помещайте в тег <code>&lt;p&gt;</code>. Не создавайте для отступов между текстовыми блоками много тегов <code>br</code>.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Неверно --&gt;
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Кодировка символов</h4>
+    <p>
+      Всегда явно указывайте кодировку символов на странице, чтобы обеспечить корректное отображение текста. Кодировка <code>utf-8</code> предпочительна.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  <title>Заголовок страницы</title>
+&lt;/head&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Подключение CSS-файлов</h4>
+    <p>
+      Стилевые файлы с помощью <code>&lt;link&gt;</code> нужно подключать внутри <code>&lt;head&gt;</code>. При этом атрибут <code>type</code> для тега <code>&lt;link&gt;</code> указывать не нужно, так его значение <code>text/css</code> указывается для CSS-файлов по умолчанию.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Неверно: стилевой файл подключен в секции &lt;body&gt;. --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!-- Верно: стилевой файл подключен в секции &lt;head&gt;. --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Подключение JavaScript-файлов</h4>
+    <p>
+      Скрипты нужно подключать в самом низу страницы, чтобы при её загрузке скрипты не блокировали содержимое страницы.
+    </p>
+    <p> При подключении JavaScript-файлов в теге
+      <code>&lt;script&gt;</code> не обязательно указывать атрибут
+      <code>type</code>, так его значение
+      <code>text/javascript</code> указывается для JS-файлов по умолчанию.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Неверно: скрипт подключается в секции &lt;head&gt;. --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="js/script.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!-- Верно: скрипт подключается перед закрывающим тегом &lt;body&gt;. --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Содержимое страницы --&gt;
+    &lt;script src="js/script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Порядок следования атрибутов</h4>
+    <p>
+      Атрибут класса у HTML-элементов следует писать первым. Единообразное написание помогает легче считывать код и быстрее разбираться в назначении блоков по их классам.
+    </p>
+    <p>
+      Остальные атрибуты можно расставлять в любом порядке, но тоже единообразно для одинаковых элементов.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;a class="element element-big" id="element" href="/" data-name="element"&gt;
+  Ссылка
+&lt;/a&gt;
+
+&lt;input class="form-control" type="text" name="test"&gt;
+
+&lt;img src="cats.jpg" alt="Альтернативный текст"&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Логические атрибуты</h4>
+    <p>
+      Для логических атрибутов элементов (например, <code>checked</code>, <code>disabled</code>, <code>required</code>) не нужно указывать значение.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- checked="checked" необязательно --&gt;
+&lt;input type="checkbox" required checked&gt;
+
+&lt;input type="text" disabled&gt;
+
+&lt;select&gt;
+  &lt;option value="1" selected>1&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Подписи полей ввода</h4>
+    <p>
+      Для улучшения взаимодействия пользователя с элементами форм, при нажатии на подпись поля, оно должно активироваться. Для этого связывайте элемент формы с его описанием, используя тег <code>&lt;label&gt;</code> и идентификаторы.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Неверно: Подпись не связана с элементом формы. --&gt;
+&lt;input type="radio" id="radio1"&gt; Радио кнопка
+
+&lt;!-- Верно: Элемент формы radio связан с подписью через идентификатор. --&gt;
+&lt;input type="radio" id="radio1"&gt;
+&lt;label for="radio1"&gt;Радио кнопка&lt;/label&gt;
+
+&lt;!-- Верно: Элемент формы radio и подпись обёрнуты в &lt;label&gt;. --&gt;
+&lt;label&gt;
+  &lt;input type="radio"&gt; Радио кнопка
+&lt;/label&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Размеры картинок</h4>
+    <p>
+      Изображениям <code>&lt;img&gt;</code> нужно задавать размеры без указания единиц размерности. Это не будет заставлять браузер перерисовывать резметку в процессе загрузки и отображения изображения.
+    </p>
+    <p>
+      По возможности указывайте действительные размеры изображений, так как это улучшает производительность отрисовки страницы.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Неверно: Размеры картинке заданы в px. --&gt;
+&lt;div class="logo-area"&gt;
+  &lt;img src="img/logo-big.png" alt="" width="300px" height="150px"&gt;
+&lt;/div&gt;
+
+&lt;!-- Неверно: Размеры картинке не заданы. --&gt;
+&lt;div class="logo-area"&gt;
+  &lt;img src="img/logo-big.png" alt=""&gt;
+&lt;/div&gt;
+
+&lt;!-- Верно: Размеры картинке заданы. --&gt;
+&lt;div class="logo-area"&gt;
+  &lt;img src="img/logo-big.png" alt="" width="300" height="150"&gt;
+&lt;/div&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Атрибут языка</h4>
+    <p>
+      Для элемента <code>&lt;html&gt;</code> в атрибуте <code>lang</code> нужно указывать соответствующий язык документа. Это помогает инструментам синтеза речи определить какое использовать произношение или системам перевода — какие использовать языковые правила.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;html lang="ru"&gt;
+&lt;/html&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+        <h3>Рекомендации</h3>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Минималистичность разметки</h4>
+    <p>
+      В разметке нужно использовать минимальное возможное количество элементов. Не должно быть лишних оберток и блоков, которые используются для оформления и могут быть заменены на псевдоэлементы.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Неверно: Используется лишняя обертка, которую можно сократить, а для декоративного элемента использован тег &lt;i&gt;, который можно заменить на псевдоэлемент. --&gt;
+&lt;div class="features"&gt;
+  &lt;div class="clearfix"&gt;
+    &lt;div class="features-item"&gt;
+      &lt;h2&gt;Быстро&lt;/h2&gt;
+      &lt;i class="triangle"&gt;&lt;/i&gt;
+      &lt;p&gt;Мы делаем свою работу быстро!&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Верно: Не используется лишняя обертка, а для декоративного элемента нет дополнительного блока в разметке. --&gt;
+&lt;div class="features clearfix"&gt;
+  &lt;div class="features-item"&gt;
+    &lt;h2&gt;Быстро&lt;/h2&gt;
+    &lt;p&gt;Мы делаем свою работу быстро!&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Семантическая разметка</h4>
+    <p>
+      Используйте в разметке семантические теги HTML.
+    </p>
+    <p>
+      Параграфы текста помещайте в тег <code>&lt;p&gt;</code>. Не создавайте для отступов между текстовыми блоками много тегов <code>br</code>.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Неверно --&gt;
 &lt;div id="main"&gt;
   &lt;div class="article"&gt;
     &lt;div class="header"&gt;
@@ -114,301 +347,75 @@
   &lt;/article&gt;
 &lt;/main&gt;
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Кодировка символов</h3>
-            <p>
-              Всегда явно указывайте кодировку символов на странице, чтобы обеспечить корректное отображение текста. Кодировка <code>utf-8</code> предпочительна.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  <title>Заголовок страницы</title>
-&lt;/head&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Минималистичность разметки</h3>
-            <p>
-              В разметке нужно использовать минимальное возможное количество элементов. Не должно быть лишних оберток и блоков, которые используются для оформления и могут быть заменены на псевдоэлементы.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Неверно: Используется лишняя обертка, которую можно сократить, а для декоративного элемента использован тег &lt;i&gt;, который можно заменить на псевдоэлемент. --&gt;
-&lt;div class="features"&gt;
-  &lt;div class="clearfix"&gt;
-    &lt;div class="features-item"&gt;
-      &lt;h2&gt;Быстро&lt;/h2&gt;
-      &lt;i class="triangle"&gt;&lt;/i&gt;
-      &lt;p&gt;Мы делаем свою работу быстро!&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- Верно: Не используется лишняя обертка, а для декоративного элемента нет дополнительного блока в разметке. --&gt;
-&lt;div class="features clearfix"&gt;
-  &lt;div class="features-item"&gt;
-    &lt;h2&gt;Быстро&lt;/h2&gt;
-    &lt;p&gt;Мы делаем свою работу быстро!&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Количество CSS-файлов</h3>
-            <p>
-              Минимизируйте количество CSS-файлов, подключенных к странице. Меньшее количество запросов к серверу улучшит быстродействие страницы.
-            </p>
-            <p>
-              Все стили страниц должны находится в едином файле. Исключением могут являться файлы со сбросом стилей <code>normalize.css</code> или <code>reset.css</code>. Такой файл может быть подключен отдельно, перед основным стилевым файлом.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Неверно: к документу подключается несколько стилевых файлов. Один из них содержит общие стили, другие — стили конкретных страниц. --&gt;
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Количество CSS-файлов</h4>
+    <p>
+      Минимизируйте количество CSS-файлов, подключенных к странице. Меньшее количество запросов к серверу улучшит быстродействие страницы.
+    </p>
+    <p>
+      Все стили страниц должны находится в едином файле.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Неверно: к документу подключается несколько стилевых файлов. Один из них содержит общие стили, другие — стили конкретных страниц. --&gt;
 &lt;head&gt;
-  &lt;link rel="stylesheet" href="css/normalize.css"&gt;
   &lt;link rel="stylesheet" href="css/all.css"&gt;
   &lt;link rel="stylesheet" href="css/main-page.css"&gt;
   &lt;link rel="stylesheet" href="css/second-page.css"&gt;
 &lt;/head&gt;
 
 
-&lt;!-- Верно: к документу подключаются два файла – normalize.css и основной стилевой файл. --&gt;
+&lt;!-- Верно: к документу подключаются один стилевой файл. --&gt;
 &lt;head&gt;
-  &lt;link rel="stylesheet" href="css/normalize.css"&gt;
   &lt;link rel="stylesheet" href="css/style.css"&gt;
 &lt;/head&gt;
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Подключение CSS-файлов</h3>
-            <p>
-              Стилевые файлы с помощью <code>&lt;link&gt;</code> нужно подключать внутри <code>&lt;head&gt;</code>. При этом атрибут <code>type</code> для тега <code>&lt;link&gt;</code> указывать не нужно, так его значение <code>text/css</code> указывается для CSS-файлов по умолчанию.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Неверно: стилевой файл подключен в секции &lt;body&gt;. --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;link rel="stylesheet" href="css/style.css"&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
-&lt;!-- Верно: стилевой файл подключен в секции &lt;head&gt;. --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;link rel="stylesheet" href="css/style.css"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Подключение JavaScript-файлов</h3>
-            <p>
-              Скрипты нужно подключать в самом низу страницы, чтобы при её загрузке скрипты не блокировали содержимое страницы.
-            </p>
-            <p> При подключении JavaScript-файлов в теге
-              <code>&lt;script&gt;</code> не обязательно указывать атрибут
-              <code>type</code>, так его значение
-              <code>text/javascript</code> указывается для JS-файлов по умолчанию.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Неверно: скрипт подключается в секции &lt;head&gt;. --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;script src="js/script.js"&gt;&lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
-&lt;!-- Верно: скрипт подключается перед закрывающим тегом &lt;body&gt;. --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;!-- Содержимое страницы --&gt;
-    &lt;script src="js/script.js"&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Протокол ресурса</h3>
-            <p>
-              При запросе файла через полный URL часть с протоколом (<code>http:</code>, <code>https:</code>) из адреса можно исключить.
-            </p>
-            <p>
-              Это сделает URL относительным и немного уменьшит размер файлов.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Нормально --&gt;
-&lt;script src="https://htmlacademy.ru/assets/course2/scripts.js"&gt;&lt;/script&gt;
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Протокол ресурса</h4>
+    <p>
+      Если сайт поддерживает оба протокола <code>http:</code> и <code>https:</code>, то при запросе файлов в HTML через полный URL часть с протоколом из адреса можно исключить. Это сделает URL относительным и избавит от проблем с доступом, а также немного сократит запись.
+    </p>
+    <p>
+      Если сайт подерживает только один из протоколов, в URL лучше явно указывать соответствующий.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Нормально --&gt;
+&lt;img src="http://www.google.ru/images/srpr/logo11w.png" alt=""&gt;
+&lt;img src="https://www.google.ru/images/srpr/logo11w.png" alt=""&gt;
 
 &lt;!-- Лучше --&gt;
-&lt;script src="//htmlacademy.ru/assets/course2/scripts.js"&gt;&lt;/script&gt;
+&lt;img src="//www.google.ru/images/srpr/logo11w.png" alt=""&gt;
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Порядок следования атрибутов</h3>
-            <p>
-              Классы HTML-элементов используются для описания компонентов, и их значения меняют чаще других атрибутов. Поэтому атрибут класса у элементов следует писать первым, чтобы его занчение было просто править.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;a class="element" id="element" href="/" data-name="element"&gt;
-  Ссылка
-&lt;/a&gt;
-
-&lt;input class="form-control" type="text" name="test"&gt;
-
-&lt;img src="cats.jpg" alt="Альтернативный текст"&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Логические атрибуты</h3>
-            <p>
-              Для логических атрибутов элементов (например, <code>checked</code>, <code>disabled</code>, <code>required</code>) не обязательно указывать значение. Достаточно наличия самого атрибута.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- checked="checked" необязательно --&gt;
-&lt;input type="checkbox" required checked&gt;
-
-&lt;input type="text" disabled&gt;
-
-&lt;select&gt;
-  &lt;option value="1" selected>1&lt;/option&gt;
-&lt;/select&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Подписи полей ввода</h3>
-            <p>
-              Для улучшения взаимодействия пользователя с элементами форм, при нажатии на подпись поля, оно должно активироваться. Для этого связывайте элемент формы с его описанием, используя тег <code>&lt;label&gt;</code> и идентификаторы.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Неверно: Подпись не связана с элементом формы. --&gt;
-&lt;input type="radio" id="radio1"&gt; Радио кнопка
-
-&lt;!-- Верно: Элемент формы radio связан с подписью через идентификатор. --&gt;
-&lt;input type="radio" id="radio1"&gt;
-&lt;label for="radio1"&gt;Радио кнопка&lt;/label&gt;
-
-&lt;!-- Верно: Элемент формы radio и подпись обёрнуты в &lt;label&gt;. --&gt;
-&lt;label&gt;
-  &lt;input type="radio"&gt; Радио кнопка
-&lt;/label&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Размеры картинок</h3>
-            <p>
-              Картинкам <code>&lt;img&gt;</code> нужно задать действительные размеры без указания единиц размерности. Это не будет заставлять браузер перерисовывать резметку в процессе загрузки и отображения картинки.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Неверно: Размеры картинке заданы в px. --&gt;
-&lt;div class="logo-area"&gt;
-  &lt;img src="img/logo-big.png" alt="" width="300px" height="150px"&gt;
-&lt;/div&gt;
-
-&lt;!-- Неверно: Размеры картинке не заданы. --&gt;
-&lt;div class="logo-area"&gt;
-  &lt;img src="img/logo-big.png" alt=""&gt;
-&lt;/div&gt;
-
-&lt;!-- Верно: Размеры картинке заданы. --&gt;
-&lt;div class="logo-area"&gt;
-  &lt;img src="img/logo-big.png" alt="" width="300" height="150"&gt;
-&lt;/div&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Атрибут языка</h3>
-            <p>
-              Для элемента <code>&lt;html&gt;</code> в атрибуте <code>lang</code> нужно указывать соответствующий язык документа. Это помогает инструментам синтеза речи определить какое использовать произношение или системам перевода — какие использовать языковые правила.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;html lang="ru"&gt;
-&lt;/html&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
+    </figure>
+  </div>
+</article>
       </section>
-
       <section class="chapter">
         <h2>CSS</h2>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-<h3>Синтаксис</h3>
+        <h3>Правила</h3>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+<h4>Синтаксис</h4>
 <ul>
   <li>После значения свойства обязательно ставьте точку с запятой.</li>
-  <li>Для отступов внутри правил используйте два пробела. Ширина табов может быть различной в разных редакторах и системах, в то время как пробел везде одной ширины. Для правильного форматирования используйте файл <a href="/files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
+  <li>Для отступов внутри правил используйте два пробела. Для правильного форматирования используйте файл <a href="/files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
   <li>Шестнадцатиричное значение цвета пишите полностью из всех шести символов, не сокращайте. Для записи используйте строчные буквы. Например, <code>#f5f5f5</code>.</li>
   <li>Названия тегов и свойств в правилах пишите строчными буквами.</li>
-  <li>Не добавляйте начальный ноль для значений (например, <code>.5</code> вместо <code>0.5</code>).</li>
+  <li>Не сокращайте начальный ноль для значений (например, <code>.5</code> вместо <code>0.5</code>). С нулём значение проще считывается.</li>
   <li>Во всех случая в CSS используйте двойные кавычки, а не одинарные. Не опускайте кавычки в необязательных случаях.</li>
   <li>После двоеточия в правилах ставьте один пробел (<code>top: 10px;</code>). А перед двоеточием пробел не нужен.</li>
-  <li>Не оставляйте пробелов после запятых внтури значений <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code> или <code>rect()</code>. Это помогает различать различные цветовые значения (запятая без пробела) от нескольких значений одного свойства (запятая с пробелом).</li>
+  <li>Оставляйте пробелы после запятых внутри значений <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code> или <code>rect()</code>. Это повышает удобочитаемость.</li>
   <li>До и после комбинатора между селекторами (например, <code>p &gt; a</code>) ставьте один пробел.</li>
   <li>Каждое объявление в правиле пишите на новой строке.</li>
   <li>Перед открывающейся фигурной скобкой ставьте один пробел. После скобки начинайте писать с новой строки:
@@ -421,16 +428,15 @@
   <li>Не пишите единицы измерения, там где в них нет необходимости. Например, <code>border: 0</code>.</li>
   <li>Для автоматического применения этих правил используйте файл конфигурации <a href="/files/csscomb.zip">.csscomb.json</a> для настройки CSScomb.</li>
 </ul>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Неверно */
-.selector, .selector-secondary, .selector[type=text] {
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Неверно */
+.selector, .selector-secondary, .selector[type=text]{
   padding:15px;
   margin:0px 0px 15px;
-  background-color:rgba(0, 0, 0, 0.5);
-  box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
-}
+  background-color:rgba(0,0,0,.5);
+  box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF}
 
 /* Верно */
 .selector,
@@ -438,43 +444,43 @@
 .selector[type="text"] {
   padding: 15px;
   margin-bottom: 15px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 2px #cccccc, inset 0 1px 0 #ffffff;
 }
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Валидность CSS</h3>
-            <p>
-              Стили должны проходить проверку на валидность. Для проверки используйте <a target="_blank" href="http://jigsaw.w3.org/css-validator/">этот CSS-валидатор</a>.
-            </p>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Порядок свойств CSS</h3>
-            <p>
-              Объявления логически связанных свойств группируйте в следующем порядке:
-            </p>
-            <ol>
-              <li>Позиционирование</li>
-              <li>Блочная модель</li>
-              <li>Типографика</li>
-              <li>Отображение</li>
-            </ol>
-            <p>
-              Позиционирование следует первым потому, что оно влияет на положение блоков в потоке документа. Блочная модель идет следующей, так как она определяет размеры и расположение блоков.
-            </p>
-            <p>
-              Все остальные объявления, которые изменяют вид внутренних частей блоков и не оказывают влияния на другие блоки, идут в последнюю очередь.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">.declaration-order {
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Валидность CSS</h4>
+    <p>
+      Стили должны проходить проверку на валидность. Для проверки используйте <a target="_blank" href="http://jigsaw.w3.org/css-validator/">этот CSS-валидатор</a>.
+    </p>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Порядок свойств CSS</h4>
+    <p>
+      Объявления логически связанных свойств группируйте в следующем порядке:
+    </p>
+    <ol>
+      <li>Позиционирование</li>
+      <li>Блочная модель</li>
+      <li>Типографика</li>
+      <li>Отображение</li>
+    </ol>
+    <p>
+      Позиционирование следует первым потому, что оно влияет на положение блоков в потоке документа. Блочная модель идет следующей, так как она определяет размеры и расположение блоков.
+    </p>
+    <p>
+      Все остальные объявления, которые изменяют вид внутренних частей блоков и не оказывают влияния на другие блоки, идут в последнюю очередь.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">.declaration-order {
   /* Позиционирование */
   position: absolute;
   top: 0;
@@ -504,77 +510,23 @@
   opacity: 1;
 }
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Нормализация базовых стилей</h3>
-            <p>
-              Используйте <code>normalize.css</code> или <code>reset.css</code> (но не оба сразу). Подключайте один из них отдельным файлом перед основным файлом стилей.
-            </p>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Не используйте <code>@import</code></h3>
-            <p>По сравнению с тегом <code>&lt;link&gt;</code> правило <code>@import</code> медленнее и вызывает дополнительные запросы к серверу. Не используйте <code>@import</code> в CSS.</p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-markup">&lt;!-- Используйте тег link --&gt;
-&lt;link rel="stylesheet" href="module.css"&gt;
-
-&lt;!-- Избегайте @imports --&gt;
-&lt;style&gt;
-  @import url("module.css");
-&lt;/style&gt;
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Селекторы</h3>
-              <p>Выбирайте селектором в точности те элементы, что нужно. Не полагайтесь на совпадение или случайность.</p>
-              <p>Пишите такие селекторы, чтобы их можно было переиспользовать в дальнейшем. Не создавайте без необходимости цепочки селекторов или селекторы с излишней вложенностью — это увеличивает специфичность правил и уменьшает возможность их переиспользования.</p>
-              <p>
-                Также длинные цепочки вложенных селекторов усложняют код и его поддержку. Хорошим подходом считается использовать вложенность до 2 или 3 уровня. Псевдоэлементы или псевдоклассы не увеличивают уровень вложенности.
-              </p>
-              <p>Не используйте <code>id</code> для стилизации. Вместо идентификаторов для задания стилей используйте селекторы по классам или тегам.</p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Неверно */
-.catalog .catalog-item .item-description .subtitle { … }
-#header { … }
-div > p > a > span { … }
-a.link, span.text { … }
-
-/* Верно */
-.catalog { … }
-.catalog-item img { … }
-.catalog-item .item-description { … }
-.catalog-item h3 { … }
-.catalog-item:nth-child(odd):hover .item-description::after { … } /* это тоже 2 уровня вложенности */
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Имена классов</h3>
-            <ul>
-              <li>Пишите имена классов строчными буквами и используйте дефис (но не знаки нижнего подчеркивания или camelCase). Дефисы служат разделителями во взаимосвязанных классах (например, <code>.btn</code> и <code>.btn-danger</code>).</li>
-              <li>Избегайте чрезмерные и произвольные сокращения. Например, имя <code>.btn</code> подойдет для <code>button</code>, а имя <code>.s</code> обозначает непонятно что.</li>
-              <li>Придерживайтесь настолько коротких и ёмких имен классов, насколько это возможно.</li>
-              <li>Используйте осмысленные имена: давайте структурные или содержательные имена вместо презентационных.</li>
-              <li>Для написания классов используйте английские слова и термины. Не пишите названия классов и атрибутов транслитом.</li>
-            </ul>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Неверно */
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Имена классов</h4>
+    <ul>
+      <li>Пишите имена классов строчными буквами и используйте дефис (но не знаки нижнего подчеркивания или camelCase). Дефисы служат разделителями во взаимосвязанных классах (например, <code>.btn</code> и <code>.btn-danger</code>).</li>
+      <li>Избегайте чрезмерные и произвольные сокращения. Например, имя <code>.btn</code> подойдет для <code>button</code>, а имя <code>.s</code> обозначает непонятно что.</li>
+      <li>Придерживайтесь настолько коротких и ёмких имен классов, насколько это возможно.</li>
+      <li>Используйте осмысленные имена: давайте структурные или содержательные имена вместо презентационных.</li>
+      <li>Для написания классов используйте английские слова и термины. Не пишите названия классов и атрибутов транслитом.</li>
+    </ul>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Неверно */
 .testElement { … }
 .t { … }
 .big_red_button { … }
@@ -586,90 +538,50 @@ a.link, span.text { … }
 .btn { … }
 .layout-center { … }
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Используйте <code>!important</code> мудро</h3>
-            <p>
-              В большинстве случаев необходимость использования <code>!important</code> в CSS возникает из-за неправильного обращения к элементам страницы через каскад. Однако, в редких случаях, без использования <code>!important</code> не обойтись.
-            </p>
-            <p>
-              Подробнее в статье: <a href="http://meiert.com/en/blog/20150310/important/" target="_blank">http://meiert.com/en/blog/20150310/important/</a>.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Возможно !important здесь не нужен */
-.text-page p {
-  font-size: 14px !important;
-  line-height: 20px !important;
-}
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Не используйте <code>@import</code></h4>
+    <p>По сравнению с тегом <code>&lt;link&gt;</code> правило <code>@import</code> медленнее и вызывает дополнительные запросы к серверу. Не используйте <code>@import</code> в CSS.</p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-markup">&lt;!-- Используйте тег link --&gt;
+&lt;link rel="stylesheet" href="module.css"&gt;
+
+&lt;!-- Избегайте @imports --&gt;
+&lt;style&gt;
+  @import url("module.css");
+&lt;/style&gt;
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Сокращенная запись</h3>
-            <p>Старайтесь не использовать сокращенные объявления в тех случаях, когда это может косвенно переопределить другие значения. Наиболее часто злоупотребляют сокращением следующих свойств:
-              </p>
-            <ul>
-              <li><code>padding</code></li>
-              <li><code>margin</code></li>
-              <li><code>font</code></li>
-              <li><code>background</code></li>
-              <li><code>border</code></li>
-              <li><code>border-radius</code></li>
-            </ul>
-            <p>Чрезмерное использование сокращенной записи свойств часто приводит к грязному коду с ненужными переопределения и непреднамеренными побочными эффектами.</p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Неверно */
-.element {
-  margin: 0 0 10px;
-  border-radius: 3px 3px 0 0;
-  background: red;
-  background: url("image.jpg");
-}
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Варианты шрифта</h4>
+    <p>
+      Указывайте альтернативные варианты шрифта и тип семейства в конце перечисления <code>font-family</code>.
+    </p>
+    <p>
+      Альтернативный веб-безопасный шрифт и тип семейства необходимо указывать для того, чтобы в случае отсутствия основного шрифта, изменения внешнего вида шрифтов на странице были минимальны. Альтернативный шрифт должен быть такого же типа, что и основной.
+    </p>
 
-/* Верно */
-.element {
-  margin-bottom: 10px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background-color: red;
-  background-image: url("image.jpg");
-}
-</code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Варианты шрифта</h3>
-            <p>
-              Указывайте альтернативные варианты шрифта и тип семейства в конце перечисления <code>font-family</code>.
-            </p>
-            <p>
-              Альтернативный веб-безопасный шрифт и тип семейства необходимо указывать для того, чтобы в случае отсутствия основного шрифта, изменения внешнего вида шрифтов на странице были минимальны. Альтернативный шрифт должен быть такого же типа, что и основной.
-            </p>
+    <p>Порядок шрифтов следующий: </p>
+     <ol>
+       <li>основной шрифт;</li>
+       <li>веб-безопасный;</li>
+       <li>тип шрифта.</li>
+     </ol>
 
-            <p>Порядок шрифтов следующий: </p>
-             <ol>
-               <li>основной шрифт;</li>
-               <li>веб-безопасный;</li>
-               <li>тип шрифта.</li>
-             </ol>
-
-            <p>Список веб-безопасных шрифтов можно посмотреть здесь: <a href="http://www.cssfontstack.com/" target="_blank">http://www.cssfontstack.com/</a>.</p>
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Неверно: Указан только основной шрифт. */
+    <p>Список веб-безопасных шрифтов можно посмотреть здесь: <a href="http://www.cssfontstack.com/" target="_blank">http://www.cssfontstack.com/</a>.</p>
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Неверно: Указан только основной шрифт. */
 body {
   font-family: "PT Sans Narrow";
 }
@@ -694,22 +606,22 @@ body {
   font-family: "PT Sans Narrow", "Tahoma", sans-serif;
 }
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Указывайте <code>vertical-align</code></h3>
-            <p>Явно указано подходящее <code>vertical-align</code> для потоковых блоков с <code>display: inline-block</code>. </p>
-            <p>По умолчанию элементы <code>inline-block</code> имеют выравнивание <code>baseline</code>, которое может приводить к нежелательному поведению элементов, например, когда внутри них разное количество строк.</p>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Указывайте <code>vertical-align</code></h4>
+    <p>Явно указано подходящее <code>vertical-align</code> для потоковых блоков с <code>display: inline-block</code>. </p>
+    <p>По умолчанию элементы <code>inline-block</code> имеют выравнивание <code>baseline</code>, которое может приводить к нежелательному поведению элементов, например, когда внутри них разное количество строк.</p>
 
-            <p>Поэтому нужно явно и осознанно задавать выравнивание таким элементам.</p>
+    <p>Поэтому нужно явно и осознанно задавать выравнивание таким элементам.</p>
 
-            <p>Например, если вы хотите, чтобы элементы вели себя как текст, стоит явно указать значение <code>baseline</code>, такое указание позволит другим понять, что вы знаете об особенностях поведения элементов с этим выравниванием и задали его намеренно.</p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Неверно */
+    <p>Например, если вы хотите, чтобы элементы вели себя как текст, стоит явно указать значение <code>baseline</code>, такое указание позволит другим понять, что вы знаете об особенностях поведения элементов с этим выравниванием и задали его намеренно.</p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Неверно */
 .login-button {
   display: inline-block;
 }
@@ -725,22 +637,25 @@ body {
   vertical-align: top;
 }
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Свойства с префиксами</h3>
-            <p>
-            Когда вы используете свойства с вендорными префиксами, оставляйте отступы для каждого свойства так, чтобы значения объявлений выстраивались в вертикальную линию. Это упрощает многострочное редактирование.
-            </p>
-            <p>
-              В списке свойств с префиксами указывайте вариант без префикса последним.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">/* Неверно */
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Свойства с префиксами</h4>
+    <p>
+    Когда вы используете свойства с вендорными префиксами, оставляйте отступы для каждого свойства так, чтобы значения объявлений выстраивались в вертикальную линию. Это упрощает многострочное редактирование.
+    </p>
+    <p>
+      В списке свойств с префиксами указывайте вариант без префикса последним.
+    </p>
+    <p>
+      По возможности автоматизируйте работу с префиксами. Например, с помощью плагина <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Неверно */
 .selector {
   transition: 1s color;
   -webkit-transition: 1s color;
@@ -752,19 +667,114 @@ body {
           transition: 1s color;
 }
 </code></pre>
-            </figure>
-          </div>
-        </article>
-        <article class="chapter-part">
-          <div class="chapter-part-col">
-            <h3>Медиа-выражения</h3>
-            <p>
-              Помещайте медиа-выражения рядом с соответствующими наборами правил. Не объединяйте их в отдельную таблицу стилей. Не помещайте их в конце файла. Их должно быть просто найти.
-            </p>
-          </div>
-          <div class="chapter-part-col">
-            <figure>
-              <pre><code class="language-css">.element { … }
+    </figure>
+  </div>
+</article>
+        <h3>Рекомендации</h3>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Нормализация базовых стилей</h4>
+    <p>
+      Используйте <code>normalize.css</code> или <code>reset.css</code> (но не оба сразу). Подключайте один из них отдельным файлом перед основным файлом стилей.
+    </p>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Селекторы</h4>
+      <p>Выбирайте селектором в точности те элементы, что нужно. Не полагайтесь на совпадение или случайность.</p>
+      <p>Пишите такие селекторы, чтобы их можно было переиспользовать в дальнейшем. Не создавайте без необходимости цепочки селекторов или селекторы с излишней вложенностью — это увеличивает специфичность правил и уменьшает возможность их переиспользования.</p>
+      <p>
+        Также длинные цепочки вложенных селекторов усложняют код и его поддержку. Хорошим подходом считается использовать вложенность до 2 или 3 уровня. Псевдоэлементы или псевдоклассы не увеличивают уровень вложенности.
+      </p>
+      <p>Не используйте <code>id</code> для стилизации. Вместо идентификаторов для задания стилей используйте селекторы по классам или тегам.</p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Неверно */
+.catalog .catalog-item .item-description .subtitle { … }
+#header { … }
+div > p > a > span { … }
+a.link, span.text { … }
+
+/* Верно */
+.catalog { … }
+.catalog-item img { … }
+.catalog-item .item-description { … }
+.catalog-item h3 { … }
+.catalog-item:nth-child(odd):hover .item-description::after { … } /* это тоже 2 уровня вложенности */
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Используйте <code>!important</code> мудро</h4>
+    <p>
+      В большинстве случаев необходимость использования <code>!important</code> в CSS возникает из-за неправильного обращения к элементам страницы через каскад. Однако, в редких случаях, без использования <code>!important</code> не обойтись.
+    </p>
+    <p>
+      Подробнее в статье: <a href="http://meiert.com/en/blog/20150310/important/" target="_blank">http://meiert.com/en/blog/20150310/important/</a>.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Возможно !important здесь не нужен */
+.text-page p {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Сокращенная запись</h4>
+    <p>Старайтесь не использовать сокращенные объявления в тех случаях, когда это может косвенно переопределить другие значения. Наиболее часто злоупотребляют сокращением следующих свойств:
+      </p>
+    <ul>
+      <li><code>padding</code></li>
+      <li><code>margin</code></li>
+      <li><code>font</code></li>
+      <li><code>background</code></li>
+      <li><code>border</code></li>
+      <li><code>border-radius</code></li>
+    </ul>
+    <p>Чрезмерное использование сокращенной записи свойств часто приводит к грязному коду с ненужными переопределения и непреднамеренными побочными эффектами.</p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">/* Неверно */
+.element {
+  margin: 0 0 10px;
+  border-radius: 3px 3px 0 0;
+  background: red;
+  background: url("image.jpg");
+}
+
+/* Верно */
+.element {
+  margin-bottom: 10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: red;
+  background-image: url("image.jpg");
+}
+</code></pre>
+    </figure>
+  </div>
+</article>
+<article class="chapter-part">
+  <div class="chapter-part-col">
+    <h4>Медиа-выражения</h4>
+    <p>
+      Помещайте медиа-выражения рядом с соответствующими наборами правил. Не объединяйте их в отдельную таблицу стилей. Не помещайте их в конце файла. Их должно быть просто найти.
+    </p>
+  </div>
+  <div class="chapter-part-col">
+    <figure>
+      <pre><code class="language-css">.element { … }
 .sub-element { … }
 
 @media (min-width: 480px) {
@@ -772,11 +782,30 @@ body {
   .sub-element { … }
 }
 </code></pre>
-            </figure>
-          </div>
-        </article>
+    </figure>
+  </div>
+</article>
       </section>
-      <footer>
+      <footer class="footer">
+        <div class="contacts">
+          <a class="logo-full" href="https://htmlacademy.ru">
+            <img src="img/logo-full.svg" width="161" height="55" alt="HTML Academy">
+          </a>
+          <div class="soc-icons">
+            <a class="icon icon-vk" href="#">
+              Вконтакте
+            </a>
+            <a class="icon icon-fb" href="#">
+              Facebook
+            </a>
+            <a class="icon icon-tw" href="#">
+              Twitter
+            </a>
+            <a class="icon icon-ig" href="#">
+              Instagram
+            </a>
+          </div>
+        </div>
       </footer>
     </main>
     <script src="js/app.js"></script>
