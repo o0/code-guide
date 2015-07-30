@@ -1,10 +1,12 @@
 'use strict';
 
-const path = require('path');
 const fs = require('fs-extra');
+const path = require('path');
+
+const options = require(path.resolve('config/kit'));
 
 const root = path.resolve('build/');
-const discover = ['img', 'fonts', 'files', 'css', 'js'].map(function(folder) {
+const discover = options.discover.map(function(folder) {
   return path.resolve(root, folder);
 });
 

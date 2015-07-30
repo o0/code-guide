@@ -1,0 +1,14 @@
+{
+  "entry": {
+    "css": [
+      "style.css"
+    ],
+
+    "js": [
+      "app.js"
+    ]
+  },
+
+  "discover": ["img", "css", "js"],
+  "browsers": "last 2 versions, ie 10"
+}
