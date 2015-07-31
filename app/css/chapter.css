@@ -2,25 +2,42 @@
   padding: 2rem 1rem;
   background-color: var(--subtle-color);
 }
+
 @media (--viewport-medium) {
   .chapter h2 {
     padding: 2rem 2rem 2.5rem;
   }
 }
+
+@media (--viewport-large) {
+  .chapter h2 {
+    padding: 2rem 3rem 2.5rem;
+  }
+}
+
 .chapter h3 {
   padding: 1.5rem 1rem;
   background-color: var(--lighter-subtle-color);
 }
+
 @media (--viewport-medium) {
   .chapter h3 {
     padding: 1.5rem 2rem 2rem;
   }
 }
+
+@media (--viewport-large) {
+  .chapter h3 {
+    padding: 1.5rem 3rem 2rem;
+  }
+}
+
 .chapter-part {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid var(--subtle-color);
 }
+
 h3 + .chapter-part {
   border-top: 1px solid var(--subtle-color);
 }
@@ -31,25 +48,31 @@ h3 + .chapter-part {
     background-color: var(--light-subtle-color);
   }
 }
+
 .chapter-part-col figure {
   margin: 0 1rem;
 }
+
 .chapter-part-col p {
   max-width: 32rem;
 }
+
 @media (--viewport-medium) {
   .chapter-part-col {
     padding: 2rem;
   }
 }
+
 @media (--viewport-large) {
   .chapter-part {
     flex-direction: row;
   }
+
   .chapter-part-col {
     width: 50%;
     padding: 3rem;
   }
+
   .chapter-part-col + .chapter-part-col {
     border-top: 0;
   }
