@@ -1,33 +1,30 @@
-# Starter Kit
+# Руководство по коду HTML Academy
 
-Kit is supported in all versions of [iojs](https://iojs.org/en/index.html) without any flags.
+Работает с [iojs](https://iojs.org/en/index.html) без флагов. Если использовать **node 0.12**, то нужен флаг `--harmony`.
 
-To use Kit with node, you must be running **node 0.12** or higher, and must run node(1) with the `--harmony` flag.
+Для управления версиями ноды установите [Node Version Manager](https://github.com/creationix/nvm).
 
-We recommend to use [Node Version Manager](https://github.com/creationix/nvm) to easy install and manage different node and iojs versions.
+## Быстрый старт
 
-## Quickstart
-
-* [Download Kit](https://github.com/htmlacademy/kit/releases/latest)
-* Install `gulp` globally and the local packages
+* [Клонируйте репозиторий](https://github.com/htmlacademy/kit/releases/latest)
+* Установите глобально `gulp` и все локальные зависимости
 
 ```bash
 $ npm i -g gulp && npm i
 ```
 
-* Run development server
+* Запустите девелоперский сервер
 
 ```bash
 $ npm start
 ```
 
-* Open http://127.0.0.1:3000
+* Откройте http://127.0.0.1:3000 в браузере
 
-# Code-guide
-## Last build live
+## Живьём
 http://juwain.github.io/code-guide/
 
-## References
+## Отсылки
 
 1. Mark Otto https://github.com/mdo/code-guide http://codeguide.co
 2. Harry Roberts http://cssguidelin.es
