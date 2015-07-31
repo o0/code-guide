@@ -19,7 +19,6 @@
 .soc-icons {
   font-size: 0;
   display: flex;
-  width: 168px;
   justify-content: space-between;
   align-items: center;
 }
@@ -51,4 +50,8 @@
 
 .icon-ig {
   background-image: resolve('icon-instagram.svg');
+}
+
+.icon-gh {
+  background-image: resolve('icon-github.svg');
 }
