@@ -9,12 +9,7 @@
 
   <body>
     <main>
-      <header class="masthead">
-        <a href="https://github.com/htmlacademy/kit">
-          <img class="logo" src="{{resolve 'logo.svg'}}" width="100" height="127" alt="HTML Academy">
-        </a>
-        <h1>Стиль кода HTML&nbsp;Academy</h1>
-      </header>
+      {{> header}}
       <section class="chapter">
         <h2>HTML</h2>
         <h3>Правила</h3>
@@ -29,27 +24,7 @@
         <h3>Рекомендации</h3>
 {{> css/css-recomendations}}
       </section>
-      <footer class="footer">
-        <div class="contacts">
-          <a class="logo-full" href="https://htmlacademy.ru">
-            <img src="{{resolve 'logo-full.svg'}}" width="161" height="55" alt="HTML Academy">
-          </a>
-          <div class="soc-icons">
-            <a class="icon icon-vk" href="#">
-              Вконтакте
-            </a>
-            <a class="icon icon-fb" href="#">
-              Facebook
-            </a>
-            <a class="icon icon-tw" href="#">
-              Twitter
-            </a>
-            <a class="icon icon-ig" href="#">
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      {{> footer}}
     </main>
     <script src="{{resolve 'app.js'}}"></script>
   </body>
