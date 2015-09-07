@@ -6,30 +6,36 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
+  justify-content: center;
 }
 
 .logo-full {
   display: inline-block;
   width: 161px;
-  margin-bottom: 3px;
 }
 
 .soc-icons {
-  font-size: 0;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 1rem;
+
   align-items: center;
+  justify-content: space-between;
+}
+
+.soc-icons,
+.copyright {
+  font-size: 0;
 }
 
 .icon {
   min-width: 2rem;
   min-height: 2rem;
-  opacity: .5;
   background-repeat: no-repeat;
   background-position: center;
   background-size: calc(100% - 5px);
+  opacity: 0.5;
 }
 
 .icon:hover {
@@ -37,21 +43,28 @@
 }
 
 .icon-vk {
-  background-image: resolve('icon-vkontakte.svg');
+  background-image: resolve("icon-vkontakte.svg");
 }
 
 .icon-fb {
-  background-image: resolve('icon-facebook.svg');
+  background-image: resolve("icon-facebook.svg");
 }
 
 .icon-tw {
-  background-image: resolve('icon-twitter.svg');
+  background-image: resolve("icon-twitter.svg");
 }
 
 .icon-ig {
-  background-image: resolve('icon-instagram.svg');
+  background-image: resolve("icon-instagram.svg");
 }
 
 .icon-gh {
-  background-image: resolve('icon-github.svg');
+  background-image: resolve("icon-github.svg");
+}
+
+.copyright-link {
+  display: inline-block;
+  width: 91px;
+  height: 16px;
+  background-image: resolve("copyright.svg");
 }
