@@ -14,18 +14,22 @@
   height: 100px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #e5e5e5;
-
-  /* Внешний вид */
-  border-radius: 3px;
-  background-color: #f5f5f5;
 
   /* Типографика */
-  color: #333333;
-  text-align: center;
   font: normal 13px "Helvetica Neue", sans-serif;
   line-height: 1.5;
+  text-align: center;
+
+  /* Оформление */
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  opacity: 1;
+
+  /* Анимация */
+  transition: color 1s;
 
   /* Разное */
-  opacity: 1;
+  will-change: auto;
 }
