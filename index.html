@@ -21,7 +21,7 @@
   <div class="chapter-part-col">
     <h4>Синтаксис</h4>
     <ul>
-      <li>Для отступов у вложенных элементов используются два пробела. Для правильного форматирования используйте файл <a href="/files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
+      <li>Для отступов у вложенных элементов используются два пробела. Для правильного форматирования используйте файл <a href="files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
       <li>Теги и их атрибуты пишутся строчными буквами. Для значений атрибутов всегда используются двойные кавычки.</li>
       <li>Необязательный закрывающий слеш у одиночных тегов (
         <code>&lt;img&gt;</code>,
@@ -34,7 +34,7 @@
   <div class="chapter-part-col">
     <figure>
       <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="ru"&gt;
   &lt;head&gt;
     &lt;title&gt;Название страницы&lt;/title&gt;
     &lt;meta charset="utf-8"&gt;
@@ -70,7 +70,7 @@
   <div class="chapter-part-col">
     <figure>
       <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="ru"&gt;
   &lt;head&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -108,7 +108,7 @@
     <figure>
       <pre><code class="language-markup">&lt;!-- Хорошо: стилевой файл подключен в секции &lt;head&gt;. --&gt;
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="ru"&gt;
   &lt;head&gt;
     &lt;link rel="stylesheet" href="css/style.css"&gt;
   &lt;/head&gt;
@@ -118,7 +118,7 @@
 
 &lt;!-- Плохо: стилевой файл подключен в секции &lt;body&gt;. --&gt;
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="ru"&gt;
   &lt;head&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -145,7 +145,7 @@
     <figure>
       <pre><code class="language-markup">&lt;!-- Хорошо: скрипт подключается перед закрывающим тегом &lt;body&gt;. --&gt;
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="ru"&gt;
   &lt;head&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -156,7 +156,7 @@
 
 &lt;!-- Плохо: скрипт подключается в секции &lt;head&gt;. --&gt;
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="ru"&gt;
   &lt;head&gt;
     &lt;script src="js/script.js"&gt;&lt;/script&gt;
   &lt;/head&gt;
@@ -185,7 +185,7 @@
 
 &lt;input class="form-control" type="text" name="test"&gt;
 
-&lt;img src="cats.jpg" alt="Альтернативный текст"&gt;
+&lt;img class="pets-pic" src="cats.jpg" alt="Альтернативный текст"&gt;
 </code></pre>
     </figure>
   </div>
@@ -194,7 +194,7 @@
   <div class="chapter-part-col">
     <h4>Логические атрибуты</h4>
     <p>
-      Для логических атрибутов элементов (например, <code>checked</code>, <code>disabled</code>, <code>required</code>) значение не указывается.
+      Для логических атрибутов элементов (например, <code>checked</code>, <code>disabled</code>, <code>required</code>) значение не указывается, а сами атрибуты указываются последними и в единообразной последовательности во всем документе.
     </p>
   </div>
   <div class="chapter-part-col">
@@ -215,7 +215,7 @@
   <div class="chapter-part-col">
     <h4>Подписи полей ввода</h4>
     <p>
-      Для улучшения взаимодействия пользователя с элементами форм, при нажатии на подпись поля, оно должно активироваться. Для этого элемент формы связывается  с его описанием с помощью тега <code>&lt;label&gt;</code> и идентификатора.
+      Для улучшения взаимодействия пользователя с элементами форм, при нажатии на подпись поля, оно должно активироваться. Для этого элемент формы связывается  с его описанием с помощью идентификатора и атрибута <code>for</code> тега <code>&lt;label&gt;</code>.
     </p>
   </div>
   <div class="chapter-part-col">
@@ -239,7 +239,7 @@
   <div class="chapter-part-col">
     <h4>Размеры картинок</h4>
     <p>
-      Изображениям <code>&lt;img&gt;</code> должны быть явно заданы размеры в пикселях или в процентах. В случае пикселей размерность не нужна.
+      Изображениям <code>&lt;img&gt;</code> должны быть явно заданы с помощью атрибута размеры в пикселях или в процентах. В случае пикселей размерность не нужна.
     </p>
     <p>
       По возможности изображениям указываются действительные размеры, так как это улучшает производительность отрисовки страницы: браузер не будет перерисовывать страницу в процессе загрузки и отображения изображения.
@@ -288,7 +288,7 @@
 <h4>Синтаксис</h4>
 <ul>
   <li>После значения свойства обязательно ставится точка с запятой.</li>
-  <li>Для отступов внутри правил используются два пробела. Для правильного форматирования используйте файл <a href="/files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
+  <li>Для отступов внутри правил используются два пробела. Для правильного форматирования используйте файл <a href="files/editorconfig.zip">.editorconfig</a> в вашем редакторе кода.</li>
   <li>Шестнадцатеричное значение цвета не сокращается, а пишется полностью из всех шести символов. Для записи используются строчные буквы. Например, <code>#f5f5f5</code>.</li>
   <li>Названия тегов и свойств в правилах пишутся строчными буквами.</li>
   <li>Начальный ноль для значений не сокращается (например, <code>.5</code> вместо <code>0.5</code>). С нулём значение проще считывается.</li>
@@ -304,7 +304,7 @@
 </code></pre></li>
   <li>Закрывающая фигурная скобка пишется на новой строке и без отступа.</li>
   <li>Единицы измерения не пишутся, там где в них нет необходимости. Например, <code>border:&nbsp;0</code>.</li>
-  <li>Для автоматического применения этих правил используйте файл конфигурации <a href="/files/csscomb.zip">.csscomb.json</a> для настройки CSScomb.</li>
+  <li>Для автоматического применения этих правил используйте файл конфигурации <a href="files/csscomb.zip">.csscomb.json</a> для настройки CSScomb.</li>
 </ul>
   </div>
   <div class="chapter-part-col">
@@ -375,20 +375,24 @@
   height: 100px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #e5e5e5;
-
-  /* Внешний вид */
-  border-radius: 3px;
-  background-color: #f5f5f5;
 
   /* Типографика */
-  color: #333333;
-  text-align: center;
   font: normal 13px "Helvetica Neue", sans-serif;
   line-height: 1.5;
+  text-align: center;
+
+  /* Оформление */
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  opacity: 1;
+
+  /* Анимация */
+  transition: color 1s;
 
   /* Разное */
-  opacity: 1;
+  will-change: auto;
 }
 </code></pre>
     </figure>
